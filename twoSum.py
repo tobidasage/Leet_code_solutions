@@ -13,3 +13,5 @@ class solution(object):
             my_dict[value] = index
         
         return None
+    
+    "Notes: The time complexity of this solution is O(n) and the space complexity is O(n)."
