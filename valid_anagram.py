@@ -23,3 +23,9 @@ word1 = 'anagram'
 word2 = 'nagamar'
 
 solution().validAnagram(word1, word2)
+
+'''
+This is in O(n) time but it is 
+too slow of a solution, 
+we have to integrate hashing to solve this
+'''
