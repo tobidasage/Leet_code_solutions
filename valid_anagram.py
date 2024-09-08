@@ -19,13 +19,29 @@ class solution(object):
         print('False')
         return False
 
+
+#solution().validAnagram(word1, word2)
+
+class solution2(object):
+    def valid_anagram2(self, s, t):
+        
+        if len(s) != len(t):
+            print("False")
+            return False
+        
+        count_s, count_t = {}, {}
+        
+        for i in range(len(s)):
+            count_s[s[i]] = 1 + count_s.get(s[i], 0)
+            count_t[t[i]] = 1 + count_t.get(t[i], 0)
+            
+        for c in range(len(s)):
+            if count_t[t[c]] == count_s[s[c]]:
+                print("True")
+                return True
+        
 word1 = 'anagram'
 word2 = 'nagamar'
+    
+solution2().valid_anagram2(word1, word2)
 
-solution().validAnagram(word1, word2)
-
-'''
-This is in O(n) time but it is 
-too slow of a solution, 
-we have to integrate hashing to solve this
-'''
