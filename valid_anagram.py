@@ -21,6 +21,7 @@ class solution(object):
 
 
 #solution().validAnagram(word1, word2)
+#this is a slow algorithim to solve this problem
 
 class solution2(object):
     def valid_anagram2(self, s, t):
@@ -43,5 +44,7 @@ class solution2(object):
 word1 = 'anagram'
 word2 = 'nagamar'
     
-solution2().valid_anagram2(word1, word2)
+#solution2().valid_anagram2(word1, word2)
+#this is a faster way to solve this problem, but we can still make it run in O(1) memory by pythons built in counter function
+
 
