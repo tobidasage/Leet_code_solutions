@@ -14,4 +14,4 @@ class solution(object):
         
         return None
     
-    "Notes: The time complexity of this solution is O(n) and the space complexity is O(n)."
+    "Notes: The time complexity of this solution is O(n)."
